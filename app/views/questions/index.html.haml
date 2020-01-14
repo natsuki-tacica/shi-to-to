@@ -1,0 +1,24 @@
+=render 'shared/header'
+.question-content
+  .question-title
+    = @group.name
+  .question-box
+    .question-id
+    .question-text
+      -@questions.each do |question|
+        %ul
+          %li
+            %h4
+              .question-text
+                %p
+                  = question.question
+          %br/
+        .anser-box 
+          = form_for [@group,@anser] do |f|  
+            = f.text_field :anser, placeholder: 'type a message'
+            = f.submit 'Send', class: 'form__submit'
+    .lower-anser
+    - if @anser.anser.present?
+      %p.lower-anser__content
+        = @anser.anser
+  = paginate(@questions)

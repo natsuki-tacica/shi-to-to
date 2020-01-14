@@ -1,0 +1,15 @@
+ja:
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      next: "次 &rsaquo;"
+      previous: "&lsaquo; 前"
+      truncate: "&hellip;"
+    attributes:
+      user:
+        nick_name: ニックネーム
+        password: パスワード
+        password_confirmation: パスワード確認
+        email: メールアドレス
+    site_title: サイトのタイトル
