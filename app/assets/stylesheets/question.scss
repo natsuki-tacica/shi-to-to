@@ -1,7 +1,17 @@
+.question-title{
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 28px;
+  color:  #263859;
+  margin: 120px auto;
+  width: 400px;
+  background: linear-gradient(transparent 30%, #ffff66 70%);
+  
+}
 .question-content{
   width: 1100px;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 50px;
   position: relative;
   height: 1500px;
   color: rgb(26, 24, 24);
@@ -11,16 +21,6 @@
   box-shadow: 0 0 10px rgba(41,41,41,0.2);
   padding: 30px 30px;
   overflow: scroll;
-  .question-title{
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 28px;
-    color:  #263859;
-    margin: 18px 150px 50px 110px;
-    width: 400px;
-    background: linear-gradient(transparent 30%, #ffff66 70%);
-    
-  }
   .question-box{
     padding-left: 100px;
   }

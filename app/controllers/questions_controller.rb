@@ -1,4 +1,17 @@
 class QuestionsController < ApplicationController
+  # before_action :find_question, only: :show
+
+  # def show
+  #   c = @survey.users.eager_load(:ansers).find_by uuid: session[:uuid]
+  #   @anser = c.ansers.where(question_id: @question.id).first_or_initialize
+  # end
+
+  # private
+  # def find_question
+  #   @question = Question.joins(:surveys).includes(:surveys).find params[:id]
+  #   @survey = @question.surveys
+  # end
+
   before_action :set_group
 
   def index
@@ -24,10 +37,10 @@ class QuestionsController < ApplicationController
 
   def show
     @questions = Question.page(params[:page]).per(20)
-    @anser = Anser.new
   end
 
   def create
+    @anser = Anser.new
     Anser.create(anser_params)
     redirect_to questions_path
   end

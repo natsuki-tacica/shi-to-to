@@ -1,7 +1,7 @@
 =render 'shared/header'
+.question-title
+  = image_tag  @group.image
 .question-content
-  .question-title
-    = @group.name
   .question-box
     .question-id
     .question-text
@@ -11,14 +11,17 @@
             %h4
               .question-text
                 %p
-                  = question.question
+                  Q
+                  = question.id
+                %p
+                  = question.text
           %br/
         .anser-box 
           = form_for [@group,@anser] do |f|  
-            = f.text_field :anser, placeholder: 'type a message'
+            = f.text_field :text, placeholder: 'type a message'
             = f.submit 'Send', class: 'form__submit'
     .lower-anser
-    - if @anser.anser.present?
+    - if @anser.text.present?
       %p.lower-anser__content
-        = @anser.anser
+        = @anser.text
   = paginate(@questions)

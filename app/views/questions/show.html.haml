@@ -1,13 +1,41 @@
--# =render 'shared/header'
--# .question-content
--#   .question-box
--#     .question-id
--#     .question-text
--#       -@questions.each do |question|
--#         .question-text
--#           = question.question
--#           %br/
--#           .anser-box
--#             = form_for @anser do |f|
--#               = f.text_field :anser
--#   = paginate(@questions)
+=render 'shared/header'
+.question-content
+  .question-box
+    .question-id
+    .question-text
+      -@questions.each do |question|
+        .question-text
+          = question.question
+          %br/
+          .anser-box
+            = form_for @anser do |f|
+              = f.text_field :anser
+  = paginate(@questions)
+-# h1 class="ui header"
+-#   = @survey.name
+-# = form_for @answer, url: @answer.new_record? ? question_answer_index_path(@question) : question_answer_path(@question, @answer), html: {class: 'ui form'} do |f|
+-#   - if @survey.questions.size > 1
+-#     .ui.ordered.steps.fluid
+-#       - @survey.questions.each.with_index(1) do |q, i|
+-#         div class="#{i < @question.no ? 'completed' : i == @question.no ? 'active' : ''} step" data-url="#{survey_question_path(@survey, q)}"
+-#           .content
+-#             .title
+-#               | Q#{i}
+-#   .ui.fluid.card
+-#     .content
+-#       .header
+-#         span class="q-num"
+-#           | Q#{@question.no}
+-#         = @question.text
+-#     - if @question.image?
+-#       .ui.grid
+-#         .four.wide.column
+-#         .eight.wide.column
+-#           .image
+-#             = image_tag_resize @question.image, dw: 400, dh: 400, class: 'ui fluid image'
+-#         .four.wide.column
+-#     .content
+-#       h4 class="ui sub header"
+-#         = @question.type_comment
+-#       .ui.small.feed
+-#         = render partial: "question/#{@question.type.underscore}", locals: {q: @question, a: @answer}
