@@ -1,6 +1,5 @@
 class Question < ApplicationRecord
-  # has_many :ansers
-  # belongs_to :group
-  belongs_to :surveys
-  has_many :answers
+  belongs_to :groups
+  belongs_to :users
+  has_many :ansers
 end

@@ -3,13 +3,8 @@ class AnsersController < ApplicationController
   
   def index
     @anser = Anser.new
-    @ansers = @group.ansers.includes(:user)
-
+    @ansers = @question.ansers.includes(:user)
   end
-  
-  def show
-  end
-
   
   def new
     @anser = Anser.new
@@ -17,26 +12,18 @@ class AnsersController < ApplicationController
 
 
   def create
-    @anser = @group.ansers.new(anser_params)
-    redirect_to root_path
-    # if @anser.save
-    #   # respond_to do |format|
-    #   #   format.html { redirect_to group_messages_path(@group), notice: 'メッセージが送信されました' }
-    #   #   format.json
-    #   end
-    # else
-    #   @ansers = @group.ansers.includes(:user)
-    #   # flash.now[:alert] = 'メッセージを入力してください。'
-    #   # render :index
-    # end
+    @anser = @question.ansers.new(anser_params)
+    @ansers = @question.ansers.includes(:user)
+    flash.now[:alert] = 'メッセージを入力してください。'
   end
 
   private
   def anser_params
-    params.require(:anser).permit(:anser)
+    params.require(:anser).permit(:text).merge(user_id: current_user.id, question_id: params[:question_id])
   end
 
   def set_group
-    @group = Group.find(params[:group_id])
+    @question = Question.find(params[:question_id])
   end
+
 end

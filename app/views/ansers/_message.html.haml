@@ -1,0 +1,10 @@
+.anser
+  .upper-anser
+    .upper-anser__user-name
+      = anser.user.name
+    .upper-anser__date
+      = anser.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .lower-anser
+    - if anser.content.present?
+      %p.lower-anser__content
+        = anser.content

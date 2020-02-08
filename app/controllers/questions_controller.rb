@@ -12,6 +12,7 @@ class QuestionsController < ApplicationController
     
     @anser = Anser.new
 
+
   end
 
   def new
