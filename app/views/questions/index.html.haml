@@ -1,44 +1,24 @@
-=render 'shared/header'
-.question-title
-  = image_tag  @group.image
-.question-content
-  .question-box
-    .question-id
-    .question-text
-      -@questions.each do |question|
+.wrapper
+  .question-wrapper
+    =render 'shared/side_bar'
+    .question-content-main
+      =image_tag("question_100.png",class:"tag-image") 
+      =image_tag("question_woman3.png",class:"question-woman2")
+      .question-content
+        -# .question-title
+        -#   = image_tag  @group.image
+        .question-box
+          .question-text
+            -@questions.each do |question|
+              %h4
+                .question-text
+                  %p
+                    Q
+                    = question.no
+                    = link_to(question.text,"/groups/#{@group.id}/questions/#{question.id}/ansers/new")                
+      .pager
         %ul
-          %li
-            %h4
-              .question-text
-                %p
-                  Q
-                  = question.id
-                %p
-                  = question.text
-
-
--#※下記はすべてのquestionを一覧表示する※ 
--# .question-content
--#   .question-box
--#     .question-id
--#     .question-text
--#       -@questions.each do |question|
--#         %ul
--#           %li
--#             %h4
--#               .question-text
--#                 %p
--#                   Q
--#                   = question.id
--#                 %p
--#                   = question.text
--#           %br/
--#         -# .anser-box 
--#         -#   = form_for [@question, @anser] do |f|  
--#         -#     = f.text_field :text, class: 'form__message', placeholder: 'type a message'
--#         -#     = f.submit 'Send', class: 'form__submit'
--#     .lower-anser
--#     - if @anser.text.present?
--#       %p.lower-anser__content
--#         = @anser.text
--#   = paginate(@questions)
+        .pagination
+        %li
+          = paginate(@questions)
+          

@@ -1,0 +1,73 @@
+.mypage-contents{
+  background-color: #ffbf00;
+  // background-image: radial-gradient(#ffffff 20%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+  // background-position: 0 0, 40px 40px;
+  // background-size: 20px 20px;
+  width:100vw;
+  height:100vh;
+  font-family: fantasy;
+
+}
+
+.woman4{
+  margin-left: 180px;
+  margin-right: 50px;
+  width: 100px;
+  float: left;
+  position: absolute;
+
+}
+
+.mypage-content{
+  width:80%;
+  height:100vh;
+  float: right;
+  background-color: #2d8ba8;
+  padding-top: 50px;
+  position: relative;
+  // background-image: url("woman4.png");
+  // background-size: 120px 120px;
+  h2{
+    color: #ffffff;
+    padding: 50px 20px 10px 320px;
+    margin:0 auto;
+  }
+  &-box{
+    margin:0 auto;
+
+
+
+    &-anser{
+      width: 80%;
+      padding: 20px 100px;
+      margin: 0px auto;
+      background-color: #ffffff;
+      overflow: scroll;
+      height: 500px;
+      outline: dotted 2px #062D51;
+      outline-offset: -1em;
+
+      &-title{
+        padding-top: 20px;
+      }
+    }
+    p{
+      margin: 0 0 20px;
+      border-bottom: dotted;
+      border-color: #000000;
+      border-bottom-width: thin;
+
+    }
+    a {
+      color: #5a5a5a;
+      text-decoration: none;
+      padding-left:20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    a:hover {
+      background-color: #EBEB55;
+      }
+  }
+}
+

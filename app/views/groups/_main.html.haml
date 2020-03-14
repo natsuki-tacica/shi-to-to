@@ -1,141 +1,47 @@
 .main
   .main-header
     .main-header-picture
-      =image_tag("yanomi.jpg", width: "900px")
-      =image_tag("Makiba.png", width: "30px",class:"main-header-moji")
-      .main-header-picture__layar
-    %a{:href => "#"}
-      %span
-        Scroll
+      =image_tag("background_image6.png",class:"main-header-picture-cloud")
+      =image_tag("自分のことをもっと知る_.png", width: "500px",class:"main-header-picture-title")
+      =image_tag("shi-to-to_logo6.png", width: "650px",class:"main-header-picture-moji")
+      =image_tag("woman5.png", width: "350px",class:"main-header-picture-woman")
+      =image_tag("line4.png",class:"main-header-picture-cloud2")
 
   .main-content
-    .main-cotent-text
-    .main-content-box
-      .main-content-box__layar
-        .main-cotent-box__text
-          %h2
-            「Shi-to-to?」とは
-          %p
-            ありふれた情報に押しつぶされ、
-            自分自身がわからなくなった現代人にむけた
-            ”本当の自分探し"をするサービスです。
-        -#   %h3
-        -#     Shi-to-to? でできること
-        -# .box-icon
-        -#   = image_tag("user (2).svg", width: "80px")
-        -#   %p
-        -#     自分自身への質問
-    .main-content-box-first
-      .main-content-box-first__layar
-        .left-content
-          .box-title
-            %ul
-              %li
-              = link_to image_tag("question_ten.png", width: '600px'), "/questions?group_id=2"
-          .box-icon
-            %ul
-              %li
-              = image_tag("question.svg", width: "80px")
-          .box-text
-            %p
-              自分を知るための質問は、就職活動のための自己分析に似ています。
-            %p
-              堅苦しく考えずにリラックスできる空間で質問の答えを探すと、自分を知ることができます。
-    .main-content-box-second
-      .main-content-box-second__layar
-        .left-content
-          .box-title
-            %ul
-              %li
-              = link_to image_tag("question-work.png", width: '600px'),"/questions?group_id=1"
-          .box-icon
-            %ul
-              %li
-              = image_tag("massage.svg", width: "80px")
-          .box-text
-            %p
-              自分を知るためのワークは、自分を知るための10の質問と合わせて
-            %p
-              １人になれる静かな空間で取り組むことで、集中して答えを見つけることができます。
-    .main-content-box-third
-      .main-content-box-third__layar
-        .left-content
-          .box-title
-            %ul
-              %li
-              = link_to image_tag("question-hundred2.png", width: '600px'),"/questions?group_id=3"
-          .box-icon
-            %ul
-              %li
-              = image_tag("idea.svg", width: "80px")
-          .box-text
-            %p
-              自分を知るための質問は、就職活動のための自己分析に似ています。
-            %p
-              堅苦しく考えずにリラックスできる空間で質問の答えを探すと、自分を知ることができます。
-    -# .main-content-box-forth
-    -#   .main-content-box-forth__layar
-    -#     .left-content
-    -#       .box-title
-    -#         %ul
-    -#           %li
-    -#           = link_to image_tag("memory.png", width: '500px'),root_path
-    -#       .box-icon
-    -#         %ul
-    -#           %li
-    -#           = image_tag("user (2).svg", width: "80px")
-    -#       .box-text
-    -#         %p
-    -#           今まで分析した結果を確認することができます。
-    .social-media
-      .social-media__box
-        %ul
-          %li
-            = link_to 'https://twitter.com/share?url=#{request.url}' do
-              = image_tag("twitter.svg", width: "30px")
-          %li
-            = link_to 'http://line.me/R/msg/text=#{request.url}' do
-              = image_tag("instagram.svg", width: "30px")
-          %li
-            = link_to 'https://www.facebook.com/sharer/sharer.php?u=#{request.url}' do
-              = image_tag("facebook (1).svg", width: "30px")
-    %script{:src => "js/bubbly-bg.js"}
-    :javascript
-      bubbly({
-        colorStart: "#fff",
-        colorStop: "#fff",
-        blur: 1,
-        bubbles:  90,
-        compose: "source-over",
-        shadowColor: "#ffffff",
-        radiusFunc: () => Math.random() * 50,
-        bubbleFunc: () => `hsla(214, 26.7%, 47.1%, ${Math.random() * 0.8})`,
-      });
-
-
-
-
-
-
-    -# .social-media
-    -#   .social-media__box
-    -#     %ul
-    -#       %li
-    -#         = link_to "#", target: "_blank", class: "share-btn" do
-    -#           = icon 'fab', 'facebook-square'
-    -#       %li
-    -#         = link_to "#", target: "_blank", class: "share-btn" do
-    -#           = icon 'fab', 'twitter-square'
-    -#       %li
-    -#         = link_to "#", target: "_blank", class: "share-btn" do
-              -# = icon 'fab', 'pinterest-square'
-
-    -# .center-right-content
-    -#   .box-title
-    -#     100のこと
-    -#   .profile-icon
-    -#     = image_tag("user.svg", width: "70px")
-    -#     = image_tag("user (1).svg", width: "70px")
-    -#   .start-btn
-    -#     START    
--# =render 'main-js'
+    .main-content__layar
+      .main-content__layar__text
+        =image_tag("woman6.png",class:"main-content__layar__text__woman")
+        =image_tag("about.png",class:"main-content__layar__text__about")
+        =image_tag("shi-to-toとは.png",class:"main-content__layar__text__logo")
+        %p
+          質問に答えて、自分のことを知るサービスです。
+          %br    
+          気持ちを整理したいときや人生の帰路に立ったとき、もっと自分のことを知りたいときなど
+          %br
+          Shi-to-to?を通して自分のことを見つめ直してみてくださいね。
+        = link_to image_tag("question_logo5.png",width:'400px',class:"main-content__layar__text__anser"),"/groups/1/questions"
+  -# .main-group
+  -#   .main-group__layar
+  -#     .main-group__layar__box
+  -#       .main-group__layar__box_logo
+  -#         = link_to image_tag("question_logo5.png",width:'500px'),"/groups/1/questions"
+          -# .group-title ※グループをいくつか作ったときに使用する
+          -#   %ul
+          -#     %li
+          -#     = link_to image_tag("question_ten.png", width: '600px'), "/groups/2/questions"
+          -#     %li
+          -#     = link_to image_tag("question-work.png", width: '600px'),"/groups/3/questions"
+          -#     %li
+          -#     = link_to image_tag("question-hundred2.png", width: '600px'),"/groups/1/questions"
+      -# .social-media
+      -#   .social-media__box
+      -#     %ul
+      -#       %li
+      -#         = link_to 'https://twitter.com/share?url=#{request.url}' do
+      -#           = image_tag("twitter.svg", width: "30px")
+      -#       %li
+      -#         = link_to 'http://line.me/R/msg/text=#{request.url}' do
+      -#           = image_tag("instagram.svg", width: "30px")
+      -#       %li
+      -#         = link_to 'https://www.facebook.com/sharer/sharer.php?u=#{request.url}' do
+      -#           = image_tag("facebook (1).svg", width: "30px")

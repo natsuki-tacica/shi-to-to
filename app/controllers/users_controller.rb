@@ -1,9 +1,23 @@
 class UsersController < ApplicationController
+
   def show
-    user = User.find(params[:id])
-    @nickname = user.nickname
-    @tweets = user.tweets.page(params[:page]).per(5).order("created_at DESC")
+    @user = User.find(params[:id])
+    @nickname = current_user.name
+    @ansers = current_user.ansers.select("question_id").distinct.order("created_at ASC")
+    @group =Question.find_by(params[:group_id])
+
   end
+    
+  # def login
+  #   @user = User.find_by(email: params[:email],
+  #                         password: params[:password])
+  #   if @user
+  #     flash[:notice] = "ログインしました"
+  #     redirect_to("/groups/index")
+  #   else
+  #     redirect_to("/users/sign_in")
+  #   end
+  # end
 
   def edit
 
@@ -22,4 +36,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email)
   end
+
 end
+

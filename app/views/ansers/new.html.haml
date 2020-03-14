@@ -1,0 +1,55 @@
+.wrapper
+  .question-wrapper
+    =render 'shared/side_bar'
+    .question-content-main
+      .question-content-box
+        .question-content-box__title
+          .question-content-id__title
+            %p
+              Q
+              = @question.no
+          .question-content-text__title
+            %p
+              = @question.text
+          .field
+            = form_tag("/groups/#{@group.id}/questions/#{@question.id}/ansers",method: :post,id: "new_anser") do
+              %textarea.textbox{:name => "text"}
+              %input.form__submit{:type => "submit", :value => "記録"}/
+        -# .pager
+        -#   %ul.pagination
+        -#     %li.pre
+        -#       %a{:href => "/groups/#{@group.id}/questions/#{@question.id-1}"}
+        -#         %span «
+        -#     %li
+        -#       %a.active{:href => "/groups/#{@group.id}/questions/#{@question.id}"}
+        -#         %span 1
+        -#     %li
+        -#       %a{:href => "/groups/#{@group.id}/questions/#{@question.id+1}"}
+        -#         %span 2
+        -#     %li.next
+        -#       %a{:href => "/groups/#{@group.id}/questions/#{@question.id+1}"}
+        -#         %span »
+                
+              
+      -# .ansers-title
+      -#   %h4 ＜過去のアンサー＞
+      .ansers-content
+        -# - if @ansers
+        -#   - @ansers.each do |anser|
+        -#     %p
+        -#     = anser.text
+        -#     %p
+        -#     = anser.created_at.strftime("%Y年%m月%d日 %H:%M")
+      
+        - if @ansers
+          - @ansers.each do |anser|
+            %ul
+            .timeline
+              %li
+                %p
+                .timeline-date
+                  = anser.created_at.strftime("%Y年%m月%d日 %H:%M")
+                .timeline-content
+                  %p
+                  =anser.text
+

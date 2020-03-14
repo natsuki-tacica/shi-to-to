@@ -1,0 +1,16 @@
+.mypage-contents
+  =render 'shared/side_bar'
+  .mypage-content
+    =image_tag("woman4.png",class:"woman4")
+    %h2
+      = @nickname
+      さんの最近答えた質問
+    .mypage-content-box
+
+      .mypage-content-box-anser
+        .mypage-content-box-anser-title
+          - @ansers.each do |anser|
+            Q
+            = anser.question.id
+            = link_to(anser.question.text,"/groups/#{@group.id}/questions/#{anser.question_id}/ansers/new")
+            %p
