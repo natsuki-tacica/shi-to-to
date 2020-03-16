@@ -3,28 +3,46 @@
     .chat-side-question-header__name
       = link_to image_tag("shi-to-to_logo_white.png",class:"toppage-link-image"),"/"
       =image_tag("自分のことをもっと知る_.png",class:"toppage-link-image2")
-  -#     -# %h3
-  -#     -#   ユーザー名
-  -#     -# %p
-  -#     -#   = current_user.name
-  -#     %ul.header__lists
-  -#       %li.list
-  -#         -# = link_to("/groups/#{@group.id}") 
-  -#         -# = link_to image_tag("question_ten.png", width: '600px'), "/groups/2/questions"
-  -#         -# = link_to new_group_path do
-  -#           .fa.fa-edit
-  -#       %li.list
-      -#     = link_to edit_user_path(current_user) do
-      -#       .fa.fa-cog
   .chat-side-question-groups
-    -# %p
-    -#   = current_user.name
-    -# = link_to image_tag("toppage_logo.png",class:"toplogo-link-image"),"/"
     = link_to image_tag("マイページ2.png",class:"mypage-link-image"),current_user
     = link_to image_tag("質問一覧.png",class:"question-link-image"),"/groups/1/questions"    
     = link_to image_tag("トップページ5.png",class:"toplogo-link-image"),"/"
     - if user_signed_in?
-      = link_to image_tag("ログアウト2.png",class:"logout-link-image"),destroy_user_session_path
+      .user_nav.grid-6
+        = link_to image_tag("ログアウト2.png",class:"logout-link-image"),destroy_user_session_path, method: :delete
+#menu
+  %div
+    %a.menuopen{:href => "#menu"} 〓
+    %a.menuclose{:href => "#close"} 〓
+  %ul
+    %li
+      = link_to image_tag("マイページ2.png",width: '100px',class:"mypage-link-image"),current_user
+    %li
+      = link_to image_tag("質問一覧.png",width: '70px',class:"question-link-image"),"/groups/1/questions" 
+    %li
+      = link_to image_tag("トップページ5.png",width: '100px',class:"toplogo-link-image"),"/"
+    %li
+      = link_to image_tag("ログアウト2.png",width: '88px',class:"logout-link-image"),destroy_user_session_path, method: :delete
+
+
+
+-# #menu
+-#   %div
+-#     %a.menuopen{:href => "#menu"} OPEN
+-#     %a.menuclose{:href => "#close"} CLOSE
+-#   %ul
+-#     %li
+-#       = link_to image_tag("マイページ2.png",class:"mypage-link-image"),current_user
+-#     %li
+-#       = link_to image_tag("質問一覧.png",class:"question-link-image"),"/groups/1/questions" 
+-#     %li
+-#       = link_to image_tag("トップページ5.png",class:"toplogo-link-image"),"/"
+-#     %li
+-#       - if user_signed_in?
+-#         .user_nav.grid-6
+-#           = link_to image_tag("ログアウト2.png",class:"logout-link-image"),destroy_user_session_path, method: :delete
+
+  
     -# %p
     -#   マイページ
     -# = link_to image_tag("shi-to-toとは.png",width:'250px',class:"toppage-link-image"),"/"

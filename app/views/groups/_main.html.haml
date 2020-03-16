@@ -2,10 +2,10 @@
   .main-header
     .main-header-picture
       =image_tag("background_image6.png",class:"main-header-picture-cloud")
-      =image_tag("自分のことをもっと知る_.png", width: "500px",class:"main-header-picture-title")
-      =image_tag("shi-to-to_logo6.png", width: "650px",class:"main-header-picture-moji")
-      =image_tag("woman5.png", width: "350px",class:"main-header-picture-woman")
-      =image_tag("line4.png",class:"main-header-picture-cloud2")
+      =image_tag("自分のことをもっと知る_.png",class:"main-header-picture-title")
+      =image_tag("shi-to-to_logo6.png",class:"main-header-picture-moji")
+      =image_tag("woman5.png",class:"main-header-picture-woman")
+    =image_tag("line4.png",class:"main-header-picture-cloud2")
 
   .main-content
     .main-content__layar
@@ -16,32 +16,9 @@
         %p
           質問に答えて、自分のことを知るサービスです。
           %br    
-          気持ちを整理したいときや人生の帰路に立ったとき、もっと自分のことを知りたいときなど
+          気持ちを整理したいときや人生の帰路に立ったとき、
+          もっと自分のことを知りたいときなど
           %br
           Shi-to-to?を通して自分のことを見つめ直してみてくださいね。
-        = link_to image_tag("question_logo5.png",width:'400px',class:"main-content__layar__text__anser"),"/groups/1/questions"
-  -# .main-group
-  -#   .main-group__layar
-  -#     .main-group__layar__box
-  -#       .main-group__layar__box_logo
-  -#         = link_to image_tag("question_logo5.png",width:'500px'),"/groups/1/questions"
-          -# .group-title ※グループをいくつか作ったときに使用する
-          -#   %ul
-          -#     %li
-          -#     = link_to image_tag("question_ten.png", width: '600px'), "/groups/2/questions"
-          -#     %li
-          -#     = link_to image_tag("question-work.png", width: '600px'),"/groups/3/questions"
-          -#     %li
-          -#     = link_to image_tag("question-hundred2.png", width: '600px'),"/groups/1/questions"
-      -# .social-media
-      -#   .social-media__box
-      -#     %ul
-      -#       %li
-      -#         = link_to 'https://twitter.com/share?url=#{request.url}' do
-      -#           = image_tag("twitter.svg", width: "30px")
-      -#       %li
-      -#         = link_to 'http://line.me/R/msg/text=#{request.url}' do
-      -#           = image_tag("instagram.svg", width: "30px")
-      -#       %li
-      -#         = link_to 'https://www.facebook.com/sharer/sharer.php?u=#{request.url}' do
-      -#           = image_tag("facebook (1).svg", width: "30px")
+        = link_to image_tag("question_logo5.png",class:"main-content__layar__text__anser"),"/groups/1/questions"
+  

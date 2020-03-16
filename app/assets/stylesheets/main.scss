@@ -1,175 +1,836 @@
-.main{
-  width: 100%;
-  margin: 100px auto;
-  // height: 1500px;
-  font-family: fantasy;
-  
-  &-header{
-    height:580px;
-
-    &-picture{
-      &-cloud{
-        top: 0px;
-        left: 0px;
-        position: absolute;
-      }
-      &-title{
-        top: 480px;
-        left: 170px;
-        position: absolute;
-      }
-      &-moji{
-        position: absolute;
-        top: 310px;
-        left: 130px;
-        z-index: 1;
-        animation: anime1 2s ease; 
-      }
-      @keyframes anime1 {
-        0% {
-            opacity:  0;                /* 透明度指定 */
-            top: 150px;                  /* 位置指定 */
-        }
-        100% {
-            opacity:  1;                /* 透明度指定 */
-            top: 300px;                     /* 位置指定 */
-        }
-      }
-      &-woman{
-        position: relative;
-        top: 100px;
-        left: 800px;
-      }
-      &-cloud2{
-        padding-top: 160px;
-      }
-    }
-  }
-
-  &-content{
-    background-color: #4899bc;
-    margin-top: 100px;
-    padding-top: 35px;
+@media screen and (min-width:1281px){
+  .main{
     width: 100%;
-    height: 970px;
-    // background-size: 30px 30px;
-    // // background-color: #00A0E9;
-    // background-image: radial-gradient(#ffffff 15%, transparent 20%),
-    //                   radial-gradient(#ffffff 15%, transparent 20%);
-    // background-position: 0 0, 15px 15px;
-    &__layar{
-      margin: 0 auto;
-      width: 95%;
-      height: 95%;
-      background: #fff;
-      z-index: 8;
-      background-size: 10px 10px;
-    // background-color: #00A0E9;
-      background-image: radial-gradient(#4899bc 2%, transparent 10%),
-                        radial-gradient(#4899bc 2%, transparent 10%);
-      background-position: 0 0, 10px 10px;
-      &__text {
-        color: gray;
-        padding-top: 70px;
-        &__woman{
-          width: 150px;
-          margin-top: 15px;
-          margin-left: 290px;
-          float: left;
-        }
-        &__about{
-          width: 120px;
-          margin-top: 30px;
-          margin-left: 550px;
-          display: flex;
-        }
-        &__logo{
-          width: 350px;
-          padding-top: 15px;
-          margin-left: 425px;
-          display: flex;
-        }
-        &__anser{
-          padding-top: 100px;
-          display: flex;
-          margin: 0 auto;
-        }
-        p{
-          line-height: 50px;
-          font-size: 20px;
-          padding: 80px 50px 0px 50px;
-          text-align: center;
-        }
-      }  
-    } 
+    font-family: fantasy;
+    
+    
+    &-header{
+      height:580px;
 
-    }
-  &-group{
-    margin: 100px auto;
-    width: 50%;
-    height: 270px;
-    background-color: #4899bc;
-    background-size: 20px 20px;
-    background-image: radial-gradient(#ffffff 10%, transparent 10%), radial-gradient(#ffffff 10%, transparent 10%);
-    background-position: 0 0, 10px 10px;
-    &__layar{
-      // margin: 0 auto;
-      // width: 90%;
-      // height: 90%;
-      // background:  #ffffff;
-      // position: relative;
-      // top: 15px;
-      &__box{
-        margin: 0px 67px;
-        position: absolute;
-        &_logo{
-          // width:800px;
-          // margin:50px;
-          // position: relative;
-          // padding: 20px;
-          // border-top: solid 2px #4899bc;
-          // border-bottom: solid 2px #4899bc;
+      &-picture{
+        &-title{
+          top: 480px;
+          left: 170px;
+          position: absolute;
+          width: 500px;
         }
-        // &_logo:before, &_logo:after{
-        //   content: '';
-        //   position: absolute;
-        //   top: -20px;
-        //   width: 2px;
-        //   height: -webkit-calc(100% + 40px);
-        //   height: calc(100% + 40px);
-        //   background-color: #4899bc;
-        // }
-        // &_logo:before {left: 20px;}
-        // &_logo:after {right: 20px;}
-        // &_logo img {
-        //   margin:0px 120px;
-        // }
-        .group-title{
-          text-align: center;
-          padding: 20px 50px;
-          ul{
-            list-style: none;
-            li{
-              margin-top:50px;
-            }
-          }          
+        &-moji{
+          position: relative;
+          padding-left: 130px;
+          padding-top: 310px;
+          z-index: 1;
+          animation: anime1 2s ease;
+          width: 650px; 
+        }
+        @keyframes anime1 {
+          0% {
+              opacity:  0;                /* 透明度指定 */
+              top: 150px;                  /* 位置指定 */
+          }
+          100% {
+              opacity:  1;                /* 透明度指定 */
+              top: 300px;                     /* 位置指定 */
+          }
+        }
+        &-woman{
+          position: absolute;
+          top: 0px;
+          left: 800px;
+          width: 350px;
+        }
+        &-cloud2{
+          padding-top: 50px;
+        }
+      }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      margin-top: 100px;
+      padding-top: 35px;
+      width: 100%;
+      height: 970px;
+      // background-size: 30px 30px;
+      // // background-color: #00A0E9;
+      // background-image: radial-gradient(#ffffff 15%, transparent 20%),
+      //                   radial-gradient(#ffffff 15%, transparent 20%);
+      // background-position: 0 0, 15px 15px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+      // background-color: #00A0E9;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 150px;
+            margin-top: 15px;
+            margin-left: 290px;
+            float: left;
+          }
+          &__about{
+            width: 120px;
+            margin-top: 30px;
+            margin-left: 550px;
+            display: flex;
+          }
+          &__logo{
+            width: 350px;
+            padding-top: 15px;
+            margin-left: 425px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 100px;
+            display: flex;
+            margin: 0 auto;
+            width:400px;
+          }
+          p{
+            line-height: 50px;
+            font-size: 20px;
+            padding: 80px 50px 0px 50px;
+            text-align: center;
+          }
+        }  
+      } 
+
+      }
+    &-group{
+      margin: 100px auto;
+      width: 50%;
+      height: 270px;
+      background-color: #4899bc;
+      background-size: 20px 20px;
+      background-image: radial-gradient(#ffffff 10%, transparent 10%), radial-gradient(#ffffff 10%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      &__layar{
+        // margin: 0 auto;
+        // width: 90%;
+        // height: 90%;
+        // background:  #ffffff;
+        // position: relative;
+        // top: 15px;
+        &__box{
+          margin: 0px 67px;
+          position: absolute;
+          &_logo{
+            // width:800px;
+            // margin:50px;
+            // position: relative;
+            // padding: 20px;
+            // border-top: solid 2px #4899bc;
+            // border-bottom: solid 2px #4899bc;
+          }
+          // &_logo:before, &_logo:after{
+          //   content: '';
+          //   position: absolute;
+          //   top: -20px;
+          //   width: 2px;
+          //   height: -webkit-calc(100% + 40px);
+          //   height: calc(100% + 40px);
+          //   background-color: #4899bc;
+          // }
+          // &_logo:before {left: 20px;}
+          // &_logo:after {right: 20px;}
+          // &_logo img {
+          //   margin:0px 120px;
+          // }
+          .group-title{
+            text-align: center;
+            padding: 20px 50px;
+            ul{
+              list-style: none;
+              li{
+                margin-top:50px;
+              }
+            }          
+          }
+        }
+      }
+    }
+    .social-media {
+      margin-top: 200px;
+      .social-media__box {
+        width: 150px;
+        margin: 0 auto;
+        ul{
+          list-style: none;
+          display: flex;
+          padding-inline-start: 0px;
+          li{
+            padding: 0 10px;
+          }
         }
       }
     }
   }
-  .social-media {
-    margin-top: 200px;
-    .social-media__box {
-      width: 150px;
-      margin: 0 auto;
-      ul{
-        list-style: none;
-        display: flex;
-        padding-inline-start: 0px;
-        li{
-          padding: 0 10px;
+}
+@media screen and (min-width:1200px)and (max-width:1280px){
+  .main{
+    width: 100%;
+    font-family: fantasy;
+    
+    &-header{
+      height:580px;
+
+      &-picture{
+        &-title{
+          top: 500px;
+          left: 170px;
+          position: absolute;
+          width: 500px;
+        }
+        &-moji{
+          position: absolute;
+          top: 330px;
+          left: 130px;
+          z-index: 1;
+          animation: anime1 2s ease;
+          width: 650px; 
+        }
+        @keyframes anime1 {
+          0% {
+              opacity:  0;                /* 透明度指定 */
+              top: 150px;                  /* 位置指定 */
+          }
+          100% {
+              opacity:  1;                /* 透明度指定 */
+              top: 300px;                     /* 位置指定 */
+          }
+        }
+        &-woman{
+          position: relative;
+          top: 10px;
+          left: 800px;
+          width: 350px;
+        }
+        &-cloud2{
+          padding-top: 80px;
         }
       }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      margin-top: 135px;
+      padding-top: 35px;
+      width: 100%;
+      height: 970px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+      // background-color: #00A0E9;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 150px;
+            margin-top: 15px;
+            margin-left: 290px;
+            float: left;
+          }
+          &__about{
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 550px;
+            display: flex;
+          }
+          &__logo{
+            width: 380px;
+            padding-top: 15px;
+            margin-left: 425px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 100px;
+            display: flex;
+            margin: 0 auto;
+            width:400px;
+          }
+          p{
+            line-height: 50px;
+            font-size: 20px;
+            padding: 80px 50px 0px 50px;
+            text-align: center;
+          }
+        }  
+      } 
+
+      }
+    &-group{
+      margin: 100px auto;
+      width: 50%;
+      height: 270px;
+      background-color: #4899bc;
+      background-size: 20px 20px;
+      background-image: radial-gradient(#ffffff 10%, transparent 10%), radial-gradient(#ffffff 10%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      &__layar{
+        // margin: 0 auto;
+        // width: 90%;
+        // height: 90%;
+        // background:  #ffffff;
+        // position: relative;
+        // top: 15px;
+        &__box{
+          margin: 0px 67px;
+          position: absolute;
+          &_logo{
+            // width:800px;
+            // margin:50px;
+            // position: relative;
+            // padding: 20px;
+            // border-top: solid 2px #4899bc;
+            // border-bottom: solid 2px #4899bc;
+          }
+          // &_logo:before, &_logo:after{
+          //   content: '';
+          //   position: absolute;
+          //   top: -20px;
+          //   width: 2px;
+          //   height: -webkit-calc(100% + 40px);
+          //   height: calc(100% + 40px);
+          //   background-color: #4899bc;
+          // }
+          // &_logo:before {left: 20px;}
+          // &_logo:after {right: 20px;}
+          // &_logo img {
+          //   margin:0px 120px;
+          // }
+          .group-title{
+            text-align: center;
+            padding: 20px 50px;
+            ul{
+              list-style: none;
+              li{
+                margin-top:50px;
+              }
+            }          
+          }
+        }
+      }
+    }
+    .social-media {
+      margin-top: 200px;
+      .social-media__box {
+        width: 150px;
+        margin: 0 auto;
+        ul{
+          list-style: none;
+          display: flex;
+          padding-inline-start: 0px;
+          li{
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1000px)and (max-width: 1199px){
+  .main{
+    width: 100%;
+    font-family: fantasy;
+    
+    &-header{
+      height:580px;
+
+      &-picture{
+        &-title{
+          top: 470px;
+          left: 140px;
+          position: absolute;
+          width: 500px;
+        }
+        &-moji{
+          position: relative;
+          padding-left: 120px;
+          padding-top: 160px;
+          z-index: 1;
+          width: 650px;
+        }
+        &-woman{
+          position: absolute;
+          top: 250px;
+          left: 700px;
+          width: 250px;
+        }
+        &-cloud2{
+          padding-top: 250px;
+        }
+      }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      margin-top: 110px;
+      padding-top: 35px;
+      width: 100%;
+      height: 970px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 180px;
+            margin-top: 15px;
+            margin-left: 120px;
+            float: left;
+          }
+          &__about{
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 350px;
+            display: flex;
+          }
+          &__logo{
+            width: 400px;
+            padding-top: 15px;
+            margin-left: 275px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 100px;
+            display: flex;
+            margin: 0 auto;
+            width:400px;
+          }
+          p{
+            line-height: 50px;
+            font-size: 20px;
+            padding: 80px 50px 0px 50px;
+            text-align: center;
+          }
+        }  
+      } 
+
+      }
+    &-group{
+      margin: 100px auto;
+      width: 50%;
+      height: 270px;
+      background-color: #4899bc;
+      background-size: 20px 20px;
+      background-image: radial-gradient(#ffffff 10%, transparent 10%), radial-gradient(#ffffff 10%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      &__layar{
+        // margin: 0 auto;
+        // width: 90%;
+        // height: 90%;
+        // background:  #ffffff;
+        // position: relative;
+        // top: 15px;
+        &__box{
+          margin: 0px 67px;
+          position: absolute;
+          &_logo{
+            // width:800px;
+            // margin:50px;
+            // position: relative;
+            // padding: 20px;
+            // border-top: solid 2px #4899bc;
+            // border-bottom: solid 2px #4899bc;
+          }
+          // &_logo:before, &_logo:after{
+          //   content: '';
+          //   position: absolute;
+          //   top: -20px;
+          //   width: 2px;
+          //   height: -webkit-calc(100% + 40px);
+          //   height: calc(100% + 40px);
+          //   background-color: #4899bc;
+          // }
+          // &_logo:before {left: 20px;}
+          // &_logo:after {right: 20px;}
+          // &_logo img {
+          //   margin:0px 120px;
+          // }
+          .group-title{
+            text-align: center;
+            padding: 20px 50px;
+            ul{
+              list-style: none;
+              li{
+                margin-top:50px;
+              }
+            }          
+          }
+        }
+      }
+    }
+    .social-media {
+      margin-top: 200px;
+      .social-media__box {
+        width: 150px;
+        margin: 0 auto;
+        ul{
+          list-style: none;
+          display: flex;
+          padding-inline-start: 0px;
+          li{
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 999px){
+  .main{
+    width: 100%;
+    font-family: fantasy;
+    
+    &-header{
+      height:300px;
+
+      &-picture{
+        &-title{
+          width: 450px;
+          position: absolute;
+          top: 280px;
+          left: 100px;
+        }
+        &-moji{
+          padding-left: 100px;
+          padding-top: 60px;
+          z-index: 1;
+          width: 550px;
+          position: relative;
+        }
+        &-woman{
+          position: absolute;
+          top: 150px;
+          left: 600px;
+          width: 160px;
+        }
+        &-cloud2{
+          padding-top: 100px;
+        }
+      }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      margin-top: 50px;
+      padding-top: 35px;
+      width: 100%;
+      height: 850px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 150px;
+            margin-top: 15px;
+            margin-left: 80px;
+            float: left;
+          }
+          &__about{
+            width: 100px;
+            margin-top: 30px;
+            margin-left: 350px;
+            display: flex;
+          }
+          &__logo{
+            width: 350px;
+            padding-top: 15px;
+            margin-left: 175px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 100px;
+            display: flex;
+            margin: 0 auto;
+            width:400px;
+          }
+          p{
+            line-height: 50px;
+            font-size: 20px;
+            padding: 80px 50px 0px 50px;
+            text-align: center;
+          }
+        }  
+      } 
+
+      }
+    &-group{
+      margin: 100px auto;
+      width: 50%;
+      height: 270px;
+      background-color: #4899bc;
+      background-size: 20px 20px;
+      background-image: radial-gradient(#ffffff 10%, transparent 10%), radial-gradient(#ffffff 10%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      &__layar{
+        // margin: 0 auto;
+        // width: 90%;
+        // height: 90%;
+        // background:  #ffffff;
+        // position: relative;
+        // top: 15px;
+        &__box{
+          margin: 0px 67px;
+          position: absolute;
+          &_logo{
+            // width:800px;
+            // margin:50px;
+            // position: relative;
+            // padding: 20px;
+            // border-top: solid 2px #4899bc;
+            // border-bottom: solid 2px #4899bc;
+          }
+          // &_logo:before, &_logo:after{
+          //   content: '';
+          //   position: absolute;
+          //   top: -20px;
+          //   width: 2px;
+          //   height: -webkit-calc(100% + 40px);
+          //   height: calc(100% + 40px);
+          //   background-color: #4899bc;
+          // }
+          // &_logo:before {left: 20px;}
+          // &_logo:after {right: 20px;}
+          // &_logo img {
+          //   margin:0px 120px;
+          // }
+          .group-title{
+            text-align: center;
+            padding: 20px 50px;
+            ul{
+              list-style: none;
+              li{
+                margin-top:50px;
+              }
+            }          
+          }
+        }
+      }
+    }
+    .social-media {
+      margin-top: 200px;
+      .social-media__box {
+        width: 150px;
+        margin: 0 auto;
+        ul{
+          list-style: none;
+          display: flex;
+          padding-inline-start: 0px;
+          li{
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 376px) and(max-width: 499px){
+  .main{
+    width: 100%;
+    font-family: fantasy;
+    
+    &-header{
+      height:300px;
+
+      &-picture{
+        &-title{
+          width: 200px;
+          position: absolute;
+          top: 180px;
+          left: 50px;
+        }
+        &-moji{
+          padding-left: 50px;
+          padding-top: 70px;
+          z-index: 1;
+          width: 250px;
+          position: relative;
+        }
+
+        &-woman{
+          position: absolute;
+          top: 110px;
+          left: 270px;
+          width: 90px;
+          // display:none;
+        }
+        &-cloud2{
+          padding-top: 100px;
+        }
+      }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      padding-top: 35px;
+      width: 100%;
+      height: 550px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 60px;
+            margin-left: 30px;
+            float: left;
+          }
+          &__about{
+            width: 60px;
+            margin-top: 10px;
+            margin-left: 150px;
+            display: flex;
+          }
+          &__logo{
+            width: 200px;
+            padding-top: 5px;
+            margin-left: 75px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 50px;
+            display: flex;
+            margin: 0 auto;
+            width: 200px;
+          }
+          p{
+            line-height: 20px;
+            font-size: 11px;
+            padding: 30px 10px 0px 10px;
+            text-align: center;
+          }
+        }  
+      } 
+
+    }
+  }
+}
+@media screen and (max-width: 375px){
+  .main{
+    width: 100%;
+    font-family: fantasy;
+
+    &-header{
+      height:300px;
+      &-picture{
+        &-title{
+          width: 200px;
+          position: absolute;
+          top: 180px;
+          left: 30px;
+        }
+        &-moji{
+          padding-left: 30px;
+          padding-top: 70px;
+          z-index: 1;
+          width: 250px;
+          position: relative;
+        }
+        &-woman{
+          position: absolute;
+          top: 110px;
+          left: 250px;
+          width: 80px;
+          // display:none;
+        }
+        &-cloud2{
+          padding-top: 100px;
+        }
+      }
+    }
+
+    &-content{
+      background-color: #4899bc;
+      padding-top: 35px;
+      width: 100%;
+      height: 520px;
+      &__layar{
+        margin: 0 auto;
+        width: 95%;
+        height: 95%;
+        background: #fff;
+        z-index: 8;
+        background-size: 10px 10px;
+        background-image: radial-gradient(#4899bc 2%, transparent 10%),
+                          radial-gradient(#4899bc 2%, transparent 10%);
+        background-position: 0 0, 10px 10px;
+        &__text {
+          color: gray;
+          padding-top: 70px;
+          &__woman{
+            width: 60px;
+            margin-top: 15px;
+            margin-left: 30px;
+            float: left;
+          }
+          &__about{
+            width: 60px;
+            margin-left: 150px;
+            display: flex;
+          }
+          &__logo{
+            width: 200px;
+            padding-top: 5px;
+            margin-left: 75px;
+            display: flex;
+          }
+          &__anser{
+            padding-top: 50px;
+            display: flex;
+            margin: 0 auto;
+            width: 200px;
+          }
+          p{
+            width: 350px;
+            // margin: 0 auto;
+            line-height: 20px;
+            font-size: 10px;
+            padding: 30px 20px 0px 20px;
+            text-align: center;
+          }
+        }  
+      } 
+
     }
   }
 }
