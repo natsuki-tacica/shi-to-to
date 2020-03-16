@@ -137,24 +137,14 @@
     float: left;
     height: 100vh;
     background-color: #ffbf00;
-    // background-color: #2d8ba8;
-    // outline: double 15px #ffbf00;
-    outline: double 19px #2d8ba8;
-    // outline-offset: -1em;
     background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
     background-position: 0 0, 10px 10px;
     background-size: 10px 10px;
     &-header{
-    // background-color: #2d8ba8;
     background-color: #ffbf00;
     height: 200px;
     width: 100%;
     display: flex;
-    // background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
-    // background-position: 0 0, 10px 10px;
-    // background-size: 10px 10px;
-    // outline: solid 2px #ffffff;
-    // outline-offset: -1em;
       &__name{
         .toppage-link-image{
           padding-top: 60px;
@@ -356,7 +346,7 @@
     float: left;
     height: 100vh;
     background-color: #ffbf00;
-    outline: double 19px #2d8ba8;
+    // outline: double 19px #2d8ba8;
     background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
     background-position: 0 0, 10px 10px;
     background-size: 10px 10px;
