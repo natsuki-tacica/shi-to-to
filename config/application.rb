@@ -5,7 +5,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module OwnKnows
+module Shitoto
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.i18n.default_locale = :ja
@@ -18,3 +18,4 @@ module OwnKnows
   end
 end
 
+config.assets.initialize_on_precompile = fal
