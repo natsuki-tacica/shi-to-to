@@ -18,4 +18,4 @@ module Shitoto
   end
 end
 
-config.assets.initialize_on_precompile = fal
+# config.assets.initialize_on_precompile = fal
