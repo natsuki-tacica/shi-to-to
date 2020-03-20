@@ -1,17 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users  
   root to: 'groups#index'
-  resources :groups
-  resources :users, only: [:edit, :update]
-  resources :questions do
-    resources :ansers
+  resources :users, only: [:index, :edit, :update, :show] #ユーザー周りきれいにする
+  resources :groups,only:[:index] do
+    resources :questions,only:[:index] do
+      resources :ansers,only:[:new,:create]
+    end
   end
-
-  # resources :survey do
-  #   resources :question, only: :show
-  # end
-  # resources :question, only: :show do
-  #   resources :answer, only: [:create, :update]
-  # end
 end

@@ -1,0 +1,32 @@
+.wrapper
+  .question-wrapper
+    =render 'shared/side_bar'
+    .question-contents
+      .question-content-box
+        .question-content-box__title
+          .question-content-id__title
+            %p
+              Q
+              = @question.no
+          .question-content-text__title
+            %p
+              = @question.text
+          .field
+            = form_tag("/groups/#{@group.id}/questions/#{@question.id}/ansers",method: :post,id: "new_anser") do
+              %textarea.textbox{:name => "text"}
+              %input.form__submit{:type => "submit", :value => "記録"}
+                
+          
+      .ansers-content      
+        - if @ansers
+          - @ansers.each do |anser|
+            %ul
+            .timeline
+              %li
+                %p
+                .timeline-date
+                  = anser.created_at.strftime("%Y年%m月%d日 %H:%M")
+                .timeline-content
+                  %p
+                  =anser.text
+

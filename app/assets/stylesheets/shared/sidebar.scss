@@ -1,0 +1,1116 @@
+@media screen and (min-width:1281px){
+  .tag-image2{
+    width: 50px; 
+    top: 100px;
+    position: fixed;
+    z-index:1020;
+  }
+  .chat-side-question{
+    width: 19%;
+    color: white;
+    float: left;
+    height: 100vh;
+    background-color: #ffbf00;
+    // background-color: #2d8ba8;
+    // outline: double 15px #ffbf00;
+    outline: double 19px #2d8ba8;
+    // outline-offset: -1em;
+    background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    background-position: 0 0, 10px 10px;
+    background-size: 10px 10px;
+    &-header{
+    // background-color: #2d8ba8;
+    background-color: #ffbf00;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    // background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    // background-position: 0 0, 10px 10px;
+    // background-size: 10px 10px;
+    // outline: solid 2px #ffffff;
+    // outline-offset: -1em;
+      &__name{
+        .toppage-link-image{
+          padding-top: 60px;
+          padding-bottom: 5px;
+          margin-left: 17px;
+          width: 200px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .toppage-link-image2{
+          padding-top: 25px;
+          margin-left: 15px;
+          width: 200px;
+          transform: rotate(-5deg);
+        }
+        h3{
+          color: #ffffff;
+          padding: 10px 80px 0px 80px;
+          font-size: 16px;      
+        }
+        p{
+          color: #ffffff;
+          padding: 0px 80px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    &-groups{
+      // background-color: #2d8ba8;
+      background-color: #ffbf00;
+      margin-top: 50px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      // outline: solid 2px #ffffff;
+      // outline-offset: -1em;
+      .mypage-link-image{
+        width: 160px;
+        margin-left: 50px;
+      }
+      .logout-link-image{
+        width: 140px;
+        margin-left: 50px;
+      }
+      .toplogo-link-image{
+        width: 160px;
+        margin-left: 47px;
+      }
+      .question-link-image{
+        width: 110px;
+        margin-left: 45px;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width:1200px)and (max-width:1280px){
+  .tag-image2{
+    width: 50px; 
+    top: 100px;
+    position: fixed;
+    z-index:1020;
+  }
+  .chat-side-question{
+    width: 19%;
+    color: white;
+    float: left;
+    height: 100vh;
+    background-color: #ffbf00;
+    background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    background-position: 0 0, 10px 10px;
+    background-size: 10px 10px;
+    &-header{
+    background-color: #ffbf00;
+    height: 200px;
+    width: 100%;
+    display: flex;
+      &__name{
+        .toppage-link-image{
+          padding-top: 60px;
+          padding-bottom: 5px;
+          margin-left: 17px;
+          width: 200px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .toppage-link-image2{
+          padding-top: 25px;
+          margin-left: 15px;
+          width: 200px;
+          transform: rotate(-5deg);
+        }
+        h3{
+          color: #ffffff;
+          padding: 10px 80px 0px 80px;
+          font-size: 16px;      
+        }
+        p{
+          color: #ffffff;
+          padding: 0px 80px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    &-groups{
+      // background-color: #2d8ba8;
+      background-color: #ffbf00;
+      margin-top: 50px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      // outline: solid 2px #ffffff;
+      // outline-offset: -1em;
+      .mypage-link-image{
+        width: 160px;
+        margin-left: 50px;
+      }
+      .logout-link-image{
+        width: 140px;
+        margin-left: 50px;
+      }
+      .toplogo-link-image{
+        width: 160px;
+        margin-left: 47px;
+      }
+      .question-link-image{
+        width: 110px;
+        margin-left: 45px;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+  }
+
+  /****メニュー全体****/
+#menu{
+	/*配置*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+  z-index: 1000;
+  display: none;
+}
+
+/****メニュー開閉ボタン****/
+#menu div{
+	/*デザイン*/
+	width: 30px;
+	height: 30px;
+	background: rgba(200,200,200,1);
+	/*配置*/
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+  right: 0;
+  display: none;
+}
+
+#menu .menuopen{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  pointer-events: auto;
+  display: none;
+}
+
+#menu .menuclose{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  pointer-events: auto;
+  display: none;
+}
+
+/****メニュー一覧****/
+#menu ul{
+	/*アニメーション*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	/*デザイン*/
+	background: rgba(200,200,200,1);
+	width: 80%;
+	/*配置*/
+	position: absolute;
+	bottom: 30px;/*#menu divの高さ*/
+  right: -80%;/*#menu ul(メニュー一覧)の幅*/
+  display: none;
+}
+
+#menu li{
+	/*デザイン*/
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	/*配置*/
+  pointer-events: auto;
+  display: none;
+}
+
+/****メニューオープン時****/
+#menu:target .menuopen{
+	/*配置*/
+	display: none;
+}
+
+#menu:target .menuclose{
+	/*配置*/
+  display: block;
+  display: none;
+}
+
+#menu:target ul{
+	/*配置*/
+  right: 0;
+  display: none;
+}
+}
+@media screen and (min-width:1000px)and (max-width: 1199px){
+  .chat-side-question{
+    width: 19%;
+    color: white;
+    float: left;
+    height: 100vh;
+    background-color: #ffbf00;
+    // outline: double 19px #2d8ba8;
+    background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    background-position: 0 0, 10px 10px;
+    background-size: 10px 10px;
+    &-header{
+    background-color: #ffbf00;
+    height: 200px;
+    width: 100%;
+    display: flex;
+      &__name{
+        .toppage-link-image{
+          padding-top: 60px;
+          padding-bottom: 5px;
+          margin-left: 10px;
+          width: 160px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .tag-image2{
+          width: 120px; 
+          top: 70px;
+          position: fixed;
+          z-index:1020;
+        }
+        .toppage-link-image2{
+          padding-top: 25px;
+          margin-left: 15px;
+          width: 150px;
+          transform: rotate(-5deg);
+        }
+        h3{
+          color: #ffffff;
+          padding: 10px 80px 0px 80px;
+          font-size: 16px;      
+        }
+        p{
+          color: #ffffff;
+          padding: 0px 80px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    &-groups{
+      // background-color: #2d8ba8;
+      background-color: #ffbf00;
+      margin-top: 50px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      // outline: solid 2px #ffffff;
+      // outline-offset: -1em;
+      .mypage-link-image{
+        width: 160px;
+        margin-left: 25px;
+      }
+      .logout-link-image{
+        width: 140px;
+        margin-left: 25px;
+      }
+      .toplogo-link-image{
+        width: 160px;
+        margin-left: 22px;
+      }
+      .question-link-image{
+        width: 110px;
+        margin-left: 23px;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+  }
+/****メニュー全体****/
+#menu{
+	/*配置*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+  z-index: 1000;
+  display: none;
+}
+
+/****メニュー開閉ボタン****/
+#menu div{
+	/*デザイン*/
+	width: 30px;
+	height: 30px;
+	background: rgba(200,200,200,1);
+	/*配置*/
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+  right: 0;
+  display: none;
+}
+
+#menu .menuopen{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  pointer-events: auto;
+  display: none;
+}
+
+#menu .menuclose{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  pointer-events: auto;
+  display: none;
+}
+
+/****メニュー一覧****/
+#menu ul{
+	/*アニメーション*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	/*デザイン*/
+	background: rgba(200,200,200,1);
+	width: 80%;
+	/*配置*/
+	position: absolute;
+	bottom: 30px;/*#menu divの高さ*/
+  right: -80%;/*#menu ul(メニュー一覧)の幅*/
+  display: none;
+}
+
+#menu li{
+	/*デザイン*/
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	/*配置*/
+  pointer-events: auto;
+  display: none;
+}
+
+/****メニューオープン時****/
+#menu:target .menuopen{
+	/*配置*/
+	display: none;
+}
+
+#menu:target .menuclose{
+	/*配置*/
+  display: block;
+  display: none;
+}
+
+#menu:target ul{
+	/*配置*/
+  right: 0;
+  display: none;
+}
+}
+@media screen and (min-width: 500px) and (max-width: 999px){
+  .tag-image2{
+    width: 50px; 
+    top: 100px;
+    position: fixed;
+    z-index:1020;
+  }
+  .chat-side-question{
+    width: 19%;
+    color: white;
+    float: left;
+    height: 100vh;
+    background-color: #ffbf00;
+    // background-color: #2d8ba8;
+    // outline: double 15px #ffbf00;
+    outline: double 19px #2d8ba8;
+    // outline-offset: -1em;
+    background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    background-position: 0 0, 10px 10px;
+    background-size: 10px 10px;
+    &-header{
+    // background-color: #2d8ba8;
+    background-color: #ffbf00;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    // background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+    // background-position: 0 0, 10px 10px;
+    // background-size: 10px 10px;
+    // outline: solid 2px #ffffff;
+    // outline-offset: -1em;
+      &__name{
+        .toppage-link-image{
+          padding-top: 60px;
+          padding-bottom: 5px;
+          margin-left: 17px;
+          width: 200px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .toppage-link-image2{
+          padding-top: 25px;
+          margin-left: 15px;
+          width: 200px;
+          transform: rotate(-5deg);
+        }
+        h3{
+          color: #ffffff;
+          padding: 10px 80px 0px 80px;
+          font-size: 16px;      
+        }
+        p{
+          color: #ffffff;
+          padding: 0px 80px;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    &-groups{
+      display: none;
+      // background-color: #2d8ba8;
+      background-color: #ffbf00;
+      margin-top: 50px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      // outline: solid 2px #ffffff;
+      // outline-offset: -1em;
+      .mypage-link-image{
+        width: 160px;
+        margin-left: 50px;
+      }
+      .logout-link-image{
+        width: 140px;
+        margin-left: 50px;
+      }
+      .toplogo-link-image{
+        width: 160px;
+        margin-left: 47px;
+      }
+      .question-link-image{
+        width: 140px;
+        margin-left: 28px;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+  }
+
+  /****メニュー全体****/
+#menu{
+	/*配置*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1000;
+}
+
+/****メニュー開閉ボタン****/
+#menu div{
+	/*デザイン*/
+	width: 30px;
+	height: 30px;
+	background: rgba(200,200,200,1);
+	/*配置*/
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#menu .menuopen{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+#menu .menuclose{
+	/*デザイン*/
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	/*配置*/
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+/****メニュー一覧****/
+#menu ul{
+	/*アニメーション*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	/*デザイン*/
+	background: rgba(200,200,200,1);
+	width: 80%;
+	/*配置*/
+	position: absolute;
+	bottom: 30px;/*#menu divの高さ*/
+	right: -80%;/*#menu ul(メニュー一覧)の幅*/
+}
+
+#menu li{
+	/*デザイン*/
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	/*配置*/
+	pointer-events: auto;
+}
+
+/****メニューオープン時****/
+#menu:target .menuopen{
+	/*配置*/
+	display: none;
+}
+
+#menu:target .menuclose{
+	/*配置*/
+	display: block;
+}
+
+#menu:target ul{
+	/*配置*/
+	right: 0;
+}
+}
+@media screen and (min-width: 376px) and(max-width: 499px){
+  .tag-image2{
+    width: 50px; 
+    top: 100px;
+    position: fixed;
+    z-index:1020;
+  }
+  .chat-side-question{
+    &-header{
+      background-color: #ffbf00;
+      height: 120px;
+      width: 100%;
+      display: flex;
+      &__name{
+        .toppage-link-image{
+          margin: 20px 0px 5px 100px;
+          width: 200px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .toppage-link-image2{
+          margin-left: 100px;
+          width: 200px;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+    &-groups{
+      // background-color: #2d8ba8;
+      background-color: #ffbf00;
+      margin-top: 50px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      // outline: solid 2px #ffffff;
+      // outline-offset: -1em;
+      display: none;
+      .mypage-link-image{
+        width: 160px;
+        margin-left: 50px;
+      }
+      .logout-link-image{
+        width: 140px;
+        margin-left: 50px;
+      }
+      .toplogo-link-image{
+        width: 160px;
+        margin-left: 47px;
+      }
+      .question-link-image{
+        width: 110px;
+        margin-left: 45px;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+  }
+  #menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  #menu div{
+    width: 30px;
+    height: 30px;
+    background: rgba(200,200,200,1);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  #menu .menuopen{
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+  }
+  
+  #menu .menuclose{
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+  }
+  
+  #menu ul{
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: rgba(200,200,200,1);
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    right: -80%;
+  }
+  
+  #menu li{
+    padding: 10px;
+    color: rgba(0,0,0,1);
+    border-bottom: 1px rgba(255,255,255,1) solid;
+    pointer-events: auto;
+  }
+  
+  #menu:target .menuopen{
+    display: none;
+  }
+  
+  #menu:target .menuclose{
+    display: block;
+  }
+  
+  #menu:target ul{
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .tag-image2{
+    width: 50px; 
+    top: 100px;
+    position: fixed;
+    z-index:1020;
+  }
+  .chat-side-question{
+    &-header{
+    background-color: #ffbf00;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    
+      &__name{
+        .toppage-link-image{
+          margin: 20px 0px 5px 90px;
+          width: 190px;
+          transform: rotate(-5deg);
+          border-bottom: double;
+          border-color: azure;
+        }
+        .toppage-link-image2{
+          margin-left: 90px;
+          width: 200px;
+          transform: rotate(-5deg);
+        }
+      }
+    }
+    &-groups{
+      background-color: #2d8ba8;
+      height:100px;
+      // background-color: #ffbf00;
+      // margin-top: 250px;
+      background-image: radial-gradient(#ffffff 2%, transparent 10%), radial-gradient(#ffffff 2%, transparent 10%);
+      background-position: 0 0, 10px 10px;
+      background-size: 10px 10px;
+      display:none;
+      .mypage-link-image{
+        width: 100px;
+        margin-left: 50px;
+        float: left;
+        display:none;
+      }
+      .logout-link-image{
+        width: 80px;
+        margin-left: 50px;
+        float: left;
+        display:none;
+      }
+      .toplogo-link-image{
+        width: 100px;
+        margin-left: 47px;
+        float: left;
+        display:none;
+      }
+      .question-link-image{
+        width: 80px;
+        margin-left: 28px;
+        display:none;
+      }
+      h3{
+        color: #ffffff;
+        padding: 10px 0px 0px 70px;
+        font-size: 16px;   
+        // float:left;
+      }
+      p{
+        color: #ffffff;
+        padding: 0px 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        float: left;
+        // display: flex;
+        // margin-left: 50px;
+        margin-bottom: 45px;
+        // outline: outset;
+        // outline-offset: -1em;
+      }
+      &__name{
+        font-size: 15px;
+        margin-bottom: 5px;
+
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 50px;
+          margin-bottom: 45px;
+          // outline: outset;
+          // outline-offset: -1em;
+        }
+      }
+    }
+
+  }
+#menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1000;
+}
+#menu div{
+	width: 30px;
+	height: 30px;
+	background: rgba(200,200,200,1);
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#menu .menuopen{
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+#menu .menuclose{
+	color: rgba(255,255,255,1);
+	font-size: 20px;
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: auto;
+}
+
+#menu ul{
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	background: rgba(200,200,200,1);
+	width: 80%;
+	position: absolute;
+	bottom: 30px;
+	right: -80%;
+}
+
+#menu li{
+	padding: 10px;
+	color: rgba(0,0,0,1);
+	border-bottom: 1px rgba(255,255,255,1) solid;
+	pointer-events: auto;
+}
+
+#menu:target .menuopen{
+	display: none;
+}
+
+#menu:target .menuclose{
+	display: block;
+}
+
+#menu:target ul{
+	right: 0;
+}
+
+}
+

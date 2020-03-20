@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_01_04_055619) do
 
   create_table "ansers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "question_id"
+    t.string "user_id"
+    t.string "question_id"
     t.text "text", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -27,7 +27,8 @@ ActiveRecord::Schema.define(version: 2020_01_04_055619) do
   end
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "group_id"
+    t.string "no"
+    t.string "group_id"
     t.string "text"
   end
 
