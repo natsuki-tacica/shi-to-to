@@ -75,7 +75,7 @@ gem 'kaminari'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'bootstrap', '~> 4.1.1'
-gem 'carrierwave'git add .
+gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'pg', group: :production
