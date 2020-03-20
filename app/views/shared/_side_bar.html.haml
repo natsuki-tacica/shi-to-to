@@ -4,7 +4,7 @@
       = link_to image_tag("shi-to-to_logo_white.png",class:"toppage-link-image"),"/"
       =image_tag("自分のことをもっと知る_.png",class:"toppage-link-image2")
   .chat-side-question-groups
-    = link_to image_tag( "mypage.png",class:"mypage-link-image"),current_user
+    = link_to image_tag( "mypage.png",class:"mypage-link-image"),"/users/#{current_user.id}"
     = link_to image_tag( "質問一覧.png",class:"question-link-image"),"/groups/1/questions"    
     = link_to image_tag("toppage.png",class:"toplogo-link-image"),"/"
     - if user_signed_in?
@@ -16,7 +16,7 @@
     %a.menuclose{:href => "#close"} 〓
   %ul
     %li
-      = link_to image_tag("mypage.png",width: '100px',class:"mypage-link-image"),current_user
+      = link_to image_tag("mypage.png",width: '100px',class:"mypage-link-image"),"/users/#{current_user.id}"
     %li
       = link_to image_tag("/assets/質問一覧.png",width: '70px',class:"question-link-image"),"/groups/1/questions" 
     %li
