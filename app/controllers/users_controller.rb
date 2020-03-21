@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
 
   def show
-    # @user = User.find(params[:id])
     @nickname = current_user.name
-    @ansers = current_user.ansers.select("question_id").distinct.order("created_at")
+    @ansers = current_user.ansers.select("question_id").distinct
     @group =Question.find_by(params[:group_id])
+    # @user = User.where(params[user_id: current_user.id])
 
   end
     
