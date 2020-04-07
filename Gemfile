@@ -74,7 +74,7 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'carrierwave'
 gem 'mini_magick'
 
